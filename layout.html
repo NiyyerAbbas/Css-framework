@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns:  auto auto auto auto auto auto auto auto;
+        grid-template-rows: 100px 800px 100px;
+    }
+    .item{
+        border: 2px solid tomato;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     header {
+        grid-column: 1 / span 8; /* Takes the full width of the grid */
+     }
+     aside {
+        grid-column: 1; /* Starts at first column */
+     }
+     main {
+        grid-column: 2 / span 6; /* Starts at second column and spans 6 columns */
+     }
+     footer {
+        grid-column: 1 / span 8; /* Takes the full width of the grid */
+     }media 
+     @
+   </style>
+</head>
+<body>
+    <header class="item header">Header</header>
+    <section>
+        <aside>Asider</aside>
+        <main>Main</main>
+        <aside>Asider</aside>
+      
+    </section>
+    <footer>Footer</footer>
+</body>
+</html>
